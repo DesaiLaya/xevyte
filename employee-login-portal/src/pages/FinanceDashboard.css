@@ -1,0 +1,187 @@
+
+
+.manager-dashboard p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+
+/* Adjusting divider space */
+.manager-dashboard .divider-line {
+  border: none;
+  border-top: 2px solid #ccc;  /* Light gray line */
+  margin:20px 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 100%;           /* Reduced spacing between sections */
+}
+
+
+.manager-dashboard h2 {
+  font-size:20;
+  margin-bottom:4;
+  color: #2c3e50;
+  text-align:start;
+  margin-top: 0;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.action-buttons button {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.approve-btn {
+  background-color: #4caf50;
+}
+
+.reject-btn {
+  background-color: #f44336;
+}
+
+.download-btn {
+  background-color: #2196f3;
+}
+
+.action-buttons button:hover {
+  opacity: 0.9;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #34495e;
+  color: white;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent body scroll */
+  font-family: "Segoe UI", sans-serif;
+}
+.dashboard-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.manager-dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fa;
+  overflow: hidden; /* Prevent extra scroll */
+}
+.dashboard-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.manager-dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fa;
+  overflow: hidden; /* Prevent extra scroll */
+}
+
+
+/* Layout container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 266px;
+  background-color: #040c42;
+  height: 100vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+/* Main content area */
+.manager-dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f7f9fa;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+/* Fixed header section */
+.dashboard-header {
+  flex-shrink: 0;
+}
+
+/* Scrollable table area */
+.table-wrapper {
+max-width: 100%;
+  margin:0;
+  padding:0;
+  max-height:100vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Table layout */
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.status-table th,
+.status-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+/* Sticky header */
+.status-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  z-index: 2;
+}

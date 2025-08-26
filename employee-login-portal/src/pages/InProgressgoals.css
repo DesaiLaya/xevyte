@@ -1,0 +1,80 @@
+.employee-goal-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.back-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #b71c1c;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.goal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.goal-card {
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.employee-goal-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.goal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.goal-table th,
+.goal-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.goal-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

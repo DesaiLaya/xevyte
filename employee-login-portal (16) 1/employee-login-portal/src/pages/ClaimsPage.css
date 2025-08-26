@@ -1,0 +1,210 @@
+/* Adjusting divider space */
+.divider-line {
+  border: none;
+  border-top: 2px solid #ccc;  /* Light gray line */
+  margin: 10px 0;     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);         /* Reduced spacing between sections */
+}
+
+/* Adjusting space above divider */
+.main-container .divider {
+  margin-top: 10px;   /* Reduced margin from 60px to 10px */
+  margin-bottom: 20px;
+  height: 2px;
+  width: 100%;
+  background-color: #ccc;  /* Light gray color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Adding shadow for emphasis */
+}
+
+/* Quick actions grid updates */
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+  gap: 16px;  /* Space between items */
+  margin-top: 10px; /* Reduced margin-top to bring the grid closer */
+  padding: 0 20px;  /* Prevent content from touching the sides */
+  box-sizing: border-box;
+}
+/* Quick actions grid updates */
+.quick-actions-grid .twi{
+width:80vh;
+
+}
+.twi .action-box{
+  margin-top: 15px;
+}
+
+/* Adjust each action box */
+.action-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Slight shadow */
+  min-height: 120px;  /* Ensuring each box has sufficient height */
+  justify-content: space-between;  /* Align content with space between */
+}
+
+/* Hover effect for action boxes */
+.action-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.icon {
+  font-size: 26px;
+  background: #ffffff70;
+  padding: 12px;
+  border-radius: 10px;
+  margin-right: 16px;
+}
+
+/* Title and description inside each action box */
+.action-box h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.action-box p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Arrow styling */
+.arrow {
+  margin-left: auto;
+  font-size: 22px;
+  color: #999;
+}
+
+/* Background color variations for different action boxes */
+.light-blue {
+  background: #e3ecff;
+}
+
+.light-green {
+  background: #e4f8e9;
+}
+
+.light-yellow {
+  background: #fff5db;
+}
+
+.light-purple {
+  background: #f3ecff;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .quick-actions-grid {
+    grid-template-columns: 1fr 1fr; /* Stack items in 2 columns */
+  }
+}
+
+/* Adjustments to Sidebar and Main Content */
+.sidebar {
+  width: 270px;
+  height: 832px;
+  background-color: #040c42;
+  flex-shrink: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar.collapsed {
+  width: 91px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.office-vng {
+  width: 146px;
+  height: 39px;
+  margin: 0 0 20px 30px;
+}
+
+/* Toggle button */
+.toggle-btn {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Action Buttons */
+.actions-section button {
+  margin-right: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions-section button:hover {
+  background-color: #125ea3;
+}
+
+/* Topbar search input adjustments */
+.main-search-wrapper {
+  position: relative;
+  width: 260px;
+}
+
+.main-search-input {
+  width: 100%;
+  padding: 10px 35px 10px 12px;
+  font-size: 20px;
+  border: 1px solid #4d4f82;
+  border-radius: 6px;
+}
+
+/* Divider Styling (within main container) */
+.main-container .divider {
+  margin-top: 10px;  /* Adjusted margin */
+  margin-bottom: 20px;
+  height: 2px;
+  width: 100%;
+  background-color: blueviolet;  /* Changed color to blueviolet */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout fixes */
+@media (max-width: 768px) {
+  .summary-card {
+    width: 100%;
+  }
+
+  .actions-section {
+    grid-template-columns: 1fr;
+  }
+
+  /* Updated Quick actions grid for 2 cards per row */
+.quick-actions-grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* ✅ Now 2 equal-width columns */
+  gap: 20px;  /* Increased spacing between cards */
+  margin-top: 20px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+}
+/* Mobile responsive: 1 card per row on small screens */
+@media (max-width: 768px) {
+  .quick-actions-grid {
+    grid-template-columns: 1fr;  /* Stack items vertically on mobile */
+    padding: 0 16px;
+  }
+}

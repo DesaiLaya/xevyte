@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* Main Dashboard */
+.manager-dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fa;
+  overflow: auto;
+  height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+  flex-shrink: 0;
+}
+
+/* Ensures the table wrapper scrolls properly */
+.table {
+  max-height: calc(100vh - 200px); /* Adjust based on your layout */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* Table styling */
+.status {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.status thead {
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.status th, .status td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.status thead th {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  z-index: 1;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.status tbody td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+/* Other styles for the modal */
+
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add gap to create space between the items */
+  gap: 15px; 
+  margin-top: 10px;
+}
+
+.pdf-controls p {
+  /* You can add styling for the page number text here */
+  font-weight: 600;
+  color: #555;
+  margin:0; /* Remove default margin */
+}
+
+.pdf-controls button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+.pdf-controls button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.pdf-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Other styles for the modal */

@@ -1,0 +1,97 @@
+.reset-link-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-section {
+  flex: 1;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 80%;
+  height: auto;
+}
+
+.message-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.message-section h2{
+  font-family:"Poppins";
+  width:532px;
+  height:30px;
+  weight:600;
+  size:20px;
+  text-align: center;
+
+}
+.message-section p{
+  font-family:"Poppins";
+  width:532px;
+  height:52px;
+  font-weight: 400;
+  size:16px;
+  text-align: center;
+
+}
+
+.mail-icon {
+  width: 80px;
+  height:76px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #007bff;
+  font-family:"Poppins";
+  font-size: 18px;
+  text-align: "center";
+}
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.office-img {
+  width: 647px;
+  height: 832px;
+  object-fit: cover; /* fills entire space, cropping if necessary */
+}
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right:480px;
+  z-index: 10;
+}
+
+
+.xevyte-logo {
+  width: 146px;
+  height: 39px;
+  object-fit: contain;
+}

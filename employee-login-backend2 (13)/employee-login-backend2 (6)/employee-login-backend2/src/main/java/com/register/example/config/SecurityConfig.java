@@ -29,7 +29,10 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         // Allow requests from your React application's origin
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+       configuration.setAllowedOrigins(Arrays.asList(
+        "http://localhost:3000",
+        "http://172.31.12.229:3000"  // <-- Add your deployed frontend IP
+    ));
         // Specify the allowed HTTP methods
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         // Allow all headers

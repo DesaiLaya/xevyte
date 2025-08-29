@@ -14,7 +14,7 @@ function LoginPage() {
     setError("");
  
     try {
-      const res = await axios.post("http://13.201.189.59:8082/api/auth/login", {
+      const res = await axios.post("http://13.203.101.53:8082/api/auth/login", {
         employeeId,
         password,
       });

@@ -23,7 +23,7 @@ import java.util.UUID;
  
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = {"http://localhost:3000", "http://"13.201.189.59""})
+@CrossOrigin(origins = {"http://localhost:3000", "http://13.201.189.59"})
 public class AuthController {
  
     @Autowired

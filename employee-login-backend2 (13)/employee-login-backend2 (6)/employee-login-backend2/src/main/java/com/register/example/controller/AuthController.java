@@ -23,7 +23,7 @@ import java.util.UUID;
  
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = {"http://localhost:3000", "http://172.31.12.229"})
+@CrossOrigin(origins = {"http://localhost:3000", "http://"13.201.189.59""})
 public class AuthController {
  
     @Autowired
@@ -97,7 +97,7 @@ public class AuthController {
         PasswordResetToken resetToken = new PasswordResetToken(token, employeeId, expiry);
         tokenRepository.save(resetToken);
  
-      String resetLink = "http://172.31.12.229:3000/reset-password?token=" + token;
+      String resetLink = "http://localhost:3000/reset-password?token=" + token;
  
         try {
             MimeMessage message = mailSender.createMimeMessage();

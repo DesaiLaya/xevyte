@@ -25,7 +25,7 @@ import java.util.UUID;
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = {
     "http://3.7.45.118:3000",
-    "http://localhost:3000"
+    
 })
 
 

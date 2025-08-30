@@ -25,7 +25,7 @@ import java.util.UUID;
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = {
     
-    "http://65.2.74.194"
+    "http://3.7.45.118"
     
 })
 
@@ -102,7 +102,7 @@ public class AuthController {
         PasswordResetToken resetToken = new PasswordResetToken(token, employeeId, expiry);
         tokenRepository.save(resetToken);
  
-      String resetLink = "http://65.2.74.194/reset-password?token=" + token;
+      String resetLink = "http://3.7.45.118/reset-password?token=" + token;
 
  
         try {

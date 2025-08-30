@@ -15,7 +15,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**") // allow all /api/ requests
-                      .allowedOrigins("http://65.2.74.194")  // allow React app
+                      .allowedOrigins("http://3.7.45.118")  // allow React app
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);

@@ -1,24 +1,24 @@
-package com.register.example.config;
+// package com.register.example.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+// import org.springframework.context.annotation.Bean;
+// import org.springframework.context.annotation.Configuration;
+// import org.springframework.web.servlet.config.annotation.CorsRegistry;
+// import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
-public class WebConfig {
+// @Configuration
+// public class WebConfig {
 
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                    .allowedOrigins("http://13.234.30.186") // Change to your React app origin
-                    .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
-                    .allowedHeaders("*")
-                    .allowCredentials(true);
-            }
-        };
-    }
-}
+//     @Bean
+//     public WebMvcConfigurer corsConfigurer() {
+//         return new WebMvcConfigurer() {
+//             @Override
+//             public void addCorsMappings(CorsRegistry registry) {
+//                 registry.addMapping("/api/**")
+//                     .allowedOrigins("http://13.234.30.186") // Change to your React app origin
+//                     .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
+//                     .allowedHeaders("*")
+//                     .allowCredentials(true);
+//             }
+//         };
+//     }
+// }
